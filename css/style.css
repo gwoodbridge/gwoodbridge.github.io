@@ -1,0 +1,185 @@
+/***********************************************/
+/*MOBILE ONLY----------------------------------*/
+/***********************************************/
+@media only screen and (max-width: 600px) {
+  #banner h1 {
+    font-size: 1em;
+  }
+
+	#banner h2 {
+		font-size: 2em;
+	}
+
+	#nav_container {
+		left: 15%;
+	}
+}
+
+/***********************************************/
+/*ALL PAGES------------------------------------*/
+/***********************************************/
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #94C6E0;
+	background-image: url("../images/Main Street Disney Background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+}
+
+#body {
+	margin: auto;
+	max-width: 1060px;
+}
+
+#header {
+	min-height: 200px;
+}
+
+.current {
+	font-weight: bold !important;
+}
+
+#content {
+	background-color: rgba(255, 255, 255, 0.75);
+	display: block;
+	min-height: 700px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	width: 80%;
+}
+
+/***********************************************/
+/*HOMEPAGE-------------------------------------*/
+/***********************************************/
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#banner {
+	font-weight: bold;
+	margin: 12% auto 0  auto;
+	position: relative;
+	text-align: center;
+}
+
+#banner h1 {
+	color: #2C3E50;
+	font-family: Helvetica;
+	font-size: 3em;
+	letter-spacing: .3em;
+}
+
+#banner h2 {
+	color: #FFF;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 4em;
+	line-height: 1.1;
+	margin: auto;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	width: 60%
+}
+
+#nav_container {
+	float: right;
+	position: relative;
+	width: 100%;
+}
+
+#nav {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 980px;
+	min-height: 75px;
+	text-align: center;
+}
+
+#nav li {
+	display: block;
+	list-style: none;
+}
+
+#nav li a {
+	background-color: #17b798;
+	border: 3px solid #000;
+	display: block;
+	float: left;
+	font-weight: 300;
+	margin: 12px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-decoration: none;
+	width: 215px;
+}
+
+#nav li a:hover {
+	background-color: #17b798;
+	border: 3px solid #FFF;
+	color: #FFF;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#projects {
+	background-color: #FFF;
+	border-radius: 6px 6px 0 0;
+	margin: 15% 30px 0;
+	min-height: 100%;
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/***********************************************/
+/*CONTACT PAGE---------------------------------*/
+/***********************************************/
+
+h3 {
+	color: #2C3E50;
+	font-family: Helvetica;
+	font-size: 2em;
+	letter-spacing: .1em;
+	text-align: center;
+}
+
+#content a {
+	font-weight: bold;
+}
+
+#content a:hover {
+	color: #17b798;
+}
+
+#content h4 {
+	font-size: 1.75em;
+	margin: 0px;
+}
+
+#content img {
+	display: block;
+	float: left;
+	padding: 15px;
+	width: 33%;
+}
+
+#contact-right {
+	display: block;
+	float: left;
+	margin-left: 50px;
+	min-width: 500px;
+	width: 60%;
+}
