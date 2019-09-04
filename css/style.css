@@ -2,16 +2,22 @@
 /*MOBILE ONLY----------------------------------*/
 /***********************************************/
 @media only screen and (max-width: 600px) {
+	body {
+			background-image: none;
+	}
+
   #banner h1 {
     font-size: 1em;
+		text-align: center;
   }
 
 	#banner h2 {
-		font-size: 2em;
+		font-size: 1.8em;
+		text-align: center;
 	}
 
 	#nav_container {
-		left: 15%;
+		left: 35%;
 	}
 }
 
