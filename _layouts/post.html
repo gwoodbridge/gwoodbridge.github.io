@@ -1,11 +1,16 @@
----
-layout: default
----
-
-<div class="posts">
-  <article>
-      <h2>{{ page.title }}</h2>
-      Published on {{ page.date | date_to_string }}
-      {{ content }}
-  </article>
-</div>
+<!DOCTYPE html>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include default-header.html %}
+        <div class="posts">
+          <article>
+              <h2>{{ page.title }}</h2>
+              Published on {{ page.date | date_to_string }}
+              {{ content }}
+          </article>
+        </div>
+      {% include default-footer.html %}
+  </body>
+</html>
