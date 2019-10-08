@@ -3564,6 +3564,11 @@ sub,sup{
       border-left: 2px solid grey;
       border-right: 2px solid grey;
     }
+
+    .posts {
+      border-left: 2px solid grey;
+      border-right: 2px solid grey;
+    }
 }
 .user-details{
     text-align:center;
