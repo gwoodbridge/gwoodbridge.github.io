@@ -1,0 +1,70 @@
+---
+layout: page
+title: 3D Printed Roller Coaster
+---
+
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>3D Printed Roller Coaster</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="block">
+        <ul class="progressbar">
+          <li class="active">Concept</li>
+          <li>Programming</li>
+          <li>Construction</li>
+          <li>Completed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <p class="about">
+            <h3>The Goal</h3>
+            <p>The goal of this project is to model, 3D print, assemble, and program a functioning model roller coaster and corresponding HMIs (Human Machine Interfaces). This is a large project that I work on in my free time.</p>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <p class="about">
+            <h3>The Plan</h3>
+            <p>The plan is to model a small existing coaster and build it with mainly 3D printed parts. I'd like this model to serve as a test bed that I can practice various control systems with. I plan to add multiple types of sensors to make it as realistic as possible.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="block">
+          <h1>Updates</h1>
+          {% for post in site.posts %}
+            {% if post.tags contains 'coaster' %}
+              <section id="blog-posts">
+                  <div class="post-area">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+                    <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+                  </div>
+                  <div class="post-content">
+                    {{ post.content }}
+                  </div>
+              </section>
+              <hr/>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
