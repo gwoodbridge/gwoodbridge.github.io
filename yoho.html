@@ -1,0 +1,52 @@
+---
+layout: page
+title: Yo Ho Fro-Yo
+---
+
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Yo Ho Fro-Yo Concept</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="block">
+          <p class="about">
+            <h3>The Goal</h3>
+            <p>The goal is to design a menu for a pirate themed frozen yogurt quick service restaurant.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="block">
+          <h1>Updates</h1>
+          {% for post in site.posts %}
+            {% if post.tags contains 'froyo' %}
+              <section id="blog-posts">
+                  <div class="post-area">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+                    <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+                  </div>
+                  <div class="post-content">
+                    {{ post.content }}
+                  </div>
+              </section>
+              <hr/>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

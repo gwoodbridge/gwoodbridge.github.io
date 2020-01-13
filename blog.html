@@ -1,0 +1,33 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Blog</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% for post in site.posts %}
+<section id="blog-posts">
+  <div class="container">
+    <div class="post-area">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+      <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p class="post-tags">{% if post.tags.size > 0 %}Tag{% if post.tags.size > 1 %}s{% endif %}: <a href="{{ site.baseurl }}/{{post.tags}}.html">{{ post.tags | sort | join: ", " }}</a>{% endif %}</p>
+      <p class="read-more">
+        {{ post.content | strip_html | truncatewords: 50 }} <br/>
+        >> <a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+      </p>
+    </div>
+  </div>
+</section>
+<hr/>
+{% endfor %}
