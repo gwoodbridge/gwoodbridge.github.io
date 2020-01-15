@@ -5,7 +5,7 @@ date: "2019-08-30 21:14:57 -0600"
 author: Garrett Woodbridge
 tags: embedded
 ---
-We finally finished our first lab for Embedded Computer Systems (ECEN 4213)! In this lab we covered the basics of a Raspberry Pi and created a Digital-Analog Converter (DAC). This involved 4 separate exercises.
+We finally finished our first lab for Embedded Computer Systems (ECEN 4213)! In this lab, we covered the basics of a Raspberry Pi and created a Digital-Analog Converter (DAC). This involved 4 separate exercises.
 
 ## Exercise 1
 For this exercise, we were required to wire up 4 LEDs and make them blink to count in binary (0000, 0001, 0010, etc).
@@ -65,7 +65,7 @@ For this third exercise, we used a potentiometer and an external Analog-Digital 
 ![Raspberry Pi Wiring Diagram Exercise 3](/assets/img/2019/08/8-30-2019_Embedded-Exercise-3.jpg)
 
 This exercise was very easy to implement. We communicated to the external ADC via I2C. This returned the digital reading from the ADC. However, we have to convert that to the correct analog voltage to print out in the terminal. Knowing that our maximum voltage is 5V, we can use the following formula:
-$$Actual Voltage = Measured Voltage / 2047 * 5V$$
+Actual Voltage = Measured Voltage / 2047 * 5V
 
 ## Exercise 4
 In this final exercise, we created an R-2R Ladder DAC and reread the values with the ADC from the previous exercise.
