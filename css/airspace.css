@@ -266,7 +266,7 @@ font header .navbar-default .navbar-nav li a:hover {
   backface-visibility: hidden;
   padding: 100px 0;
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:945px){
   #feature, #intro {
     padding: 20px 0;
   }
